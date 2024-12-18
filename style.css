@@ -75,7 +75,8 @@
     background-color: #d1c5c0;
     border-radius: 5rem;
     transform: translateY(-2rem);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
 }
 
 .scoreboard{
@@ -90,6 +91,8 @@
 
 .scoreboard h2{
     text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
 }
 
 .score{
@@ -99,6 +102,8 @@
     font-size: large;
     font-weight: 500;
     color: yellow;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -111,32 +116,6 @@
         flex-direction: column-reverse;
     }
 }
-/* 
-@media screen and (max-width: 700px){
-    
-    .inner-container{
-        gap: 0rem;
-        padding: 7rem 8rem 5rem 8rem;
-        flex-direction: column;
-    }
-    .button{
-        height: 15vh;
-        width: 10vw;
-        padding: 0.5rem;
-        background-color: #d1c5c0;
-        border-radius: 5rem;
-    }
-    
-    .button img{
-        height: 100%;
-        width: 100%;
-    }
-    
-}
-*/
-
-
-
 
 @media screen and (max-width: 500px){
     
