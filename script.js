@@ -1,39 +1,52 @@
 let dataset = ['stone', 'paper', 'scissors']
+let botScore = 0;
+let userScore = 0;
 
 
 let stone = document.querySelectorAll('.button')[0]
 let paper = document.querySelectorAll('.button')[1]
 let scissors = document.querySelectorAll('.button')[2]
 let resultBox = document.querySelector('.result')
-let UserGuess;
 let score = document.querySelectorAll('.score')
+let UserGuess;
 
-let botScore = 0;
-let userScore = 0;
 
 const scoreUpdate = () => {
     score[0].textContent = `Your Score:- ${userScore}`
     score[1].textContent = ` Computer Score :- ${botScore}`
 }
 
+const reset = () => {
+    if (botScore === 10 || userScore === 10) {
+        botScore = 0;
+        userScore = 0;
+        setTimeout(scoreUpdate, 1000)
+    }
+}
+
+
 scoreUpdate()
+
 
 stone.addEventListener('click', () => {
     UserGuess = 'stone'
     myfunc()
     scoreUpdate()
+    reset()
 })
 
 paper.addEventListener('click', () => {
     UserGuess = 'paper'
     myfunc()
     scoreUpdate()
+    reset()
 })
 
 scissors.addEventListener('click', () => {
     UserGuess = 'scissors'
     myfunc()
     scoreUpdate()
+    reset()
 })
 
 

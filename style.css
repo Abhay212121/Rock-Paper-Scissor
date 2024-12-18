@@ -14,7 +14,6 @@
     gap: 4rem;
 }
 
-
 .inner-container{
     display: flex;
     flex-direction: column;
@@ -63,7 +62,7 @@
     width: 100%;
 }
 
-.button:hover{
+.button:active{
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -80,10 +79,7 @@
     font-weight: 500;
 }
 
-
 .scoreboard{
-    /* height: 30vh;
-    width: 25vw; */
     padding: 2rem 3rem ;
     background-color: #035cc2;
     display: flex;
